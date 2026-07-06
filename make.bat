@@ -37,11 +37,6 @@ if not exist %SOURCE_FILE% (
 echo Starting GBA build pipeline for %ROM_NAME%.gba...
 echo ----------------------------------------------------
 
-:: EXTRA STEP: Output assembly straight from the compiler source
-echo [Bonus] Generating compiler assembly listing (%ROM_NAME%.s)...
-%CC% -S %SOURCE_FILE% -mthumb -mthumb-interwork -mcpu=arm7tdmi -O3 -fverbose-asm -o %ROM_NAME%.s
-if %errorlevel% neq 0 goto :error
-
 :: Step A: Compile source file to object file
 echo [1/4] Compiling %SOURCE_FILE%...
 %CC% -c %SOURCE_FILE% -mthumb -mthumb-interwork -mcpu=arm7tdmi -O3 -o %ROM_NAME%.o
