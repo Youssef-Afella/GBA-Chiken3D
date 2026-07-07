@@ -11,7 +11,7 @@ Chiken model by [jeremy](https://poly.pizza/m/1YE8U35HXsI)
 
 ## Compile
 First you need to download the [devkitPro](https://devkitpro.org/wiki/Getting_Started)<br>
-Then run "make.sh"<br>
+Then run "make.bat"<br>
 If you want to run the game also directly just download [mGBA](https://mgba.io/) and paste the exe file next to make.sh
 
 ## Controls
