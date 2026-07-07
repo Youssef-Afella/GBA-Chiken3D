@@ -9,8 +9,8 @@ With no float point units and a whopping 256KB of RAM, writing a simple software
 My main motivation is [OpenLara Project](https://github.com/XProger/OpenLara) and [Joshua Barretto](https://www.youtube.com/@jsbarretto) port of Mario 64 which is leagues ahead from what I was able to achieve.
 
 ## Compile
-First you need to download the [devkitPro](https://devkitpro.org/wiki/Getting_Started)
-Then run "make.sh"
+First you need to download the [devkitPro](https://devkitpro.org/wiki/Getting_Started)<br>
+Then run "make.sh"<br>
 If you want to run the game also directly just download [mGBA](https://mgba.io/) and paste the exe file next to make.sh
 
 ## Controls
