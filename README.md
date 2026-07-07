@@ -3,7 +3,7 @@
 (you can use it to render other stuff if for some reason you want)
 
 The GBA processor is a 32bit ARM7TDMI running at 16.78 MHz. At Mode 5 we get double buffering with a resolution of 160×128<br>
-To fill screen at 30fps we don't get more than 16M/(160*128*30) = 26cycles for each pixel<br>
+To fill screen at 30fps we don't get more than 16M/(160x128x30) = 26cycles for each pixel<br>
 With no float point units and a whopping 256KB of RAM, writing a simple software rasterizer is a very serious challenge.<br>
 
 My main motivation is [OpenLara Project](https://github.com/XProger/OpenLara) and [Joshua Barretto](https://www.youtube.com/@jsbarretto) port of Mario 64 which is leagues ahead from what I was able to achieve.<br>
