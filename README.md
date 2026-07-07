@@ -6,7 +6,8 @@ The GBA processor is a 32bit ARM7TDMI running at 16.78 MHz. At Mode 5 we get dou
 To fill screen at 30fps we don't get more than 16M/(160*128*30) = 26cycles for each pixel<br>
 With no float point units and a whopping 256KB of RAM, writing a simple software rasterizer is a very serious challenge.<br>
 
-My main motivation is [OpenLara Project](https://github.com/XProger/OpenLara) and [Joshua Barretto](https://www.youtube.com/@jsbarretto) port of Mario 64 which is leagues ahead from what I was able to achieve.
+My main motivation is [OpenLara Project](https://github.com/XProger/OpenLara) and [Joshua Barretto](https://www.youtube.com/@jsbarretto) port of Mario 64 which is leagues ahead from what I was able to achieve.<br>
+Chiken model by [jeremy](https://poly.pizza/m/1YE8U35HXsI)
 
 ## Compile
 First you need to download the [devkitPro](https://devkitpro.org/wiki/Getting_Started)<br>
@@ -28,6 +29,8 @@ The division is done with a small lookup table of 240 entry which is more than e
 - No negative Z handling.
 - No real transformations are used in this demo, just simple rotation and simple position offset.
 - No texture mapping is implemented (not needed for our chiken, but other chikens might need it).
+- The demo model is around 648 triangle with 348 vertices and it's barely above 30fps.<br>
+Supporting more triangles, UV interpolation, triangle clipping, making it useful for an actuall game will be a very hard challenge.
 
 ## Inspiration
 - [Kaze Emanuar video](https://youtu.be/kueoO3b4B-M?si=LEqiR-aQR5xYyCXh)
